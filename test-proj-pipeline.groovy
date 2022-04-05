@@ -16,11 +16,16 @@ pipeline {
               echo "deploy completed move to production sever"
             }
           }
-          stage('prod') {
+          stage('release') {
             steps {
-              /* groovylint-disable-next-line UnnecessaryGString */
-              echo "producation is completed"
+            echo "product is reday to release"
             }
           }
+          stage('prod') {
+            steps {
+            echo "producation is completed"
+            }
+          }
+          
         }
 }
