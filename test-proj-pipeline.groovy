@@ -21,11 +21,15 @@ pipeline {
             echo "product is reday to release"
             }
           }
+          stage('feature') {
+            steps {
+            echo "add new features"
+            }
+          }
           stage('prod') {
             steps {
             echo "producation is completed"
             }
           }
-          
         }
 }
