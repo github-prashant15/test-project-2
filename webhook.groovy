@@ -6,6 +6,11 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        stage('Test') {
+            steps {
+                echo 'Test is completed'
+            }
+        }
         stage('Deploy') {
             when {
                 branch 'production'
