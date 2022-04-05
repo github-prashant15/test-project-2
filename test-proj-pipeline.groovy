@@ -23,7 +23,7 @@ pipeline {
           }
           stage('feature') {
             steps {
-            echo "add new features"
+            echo "add new features after release"
             }
           }
           stage('prod') {
